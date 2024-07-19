@@ -15,7 +15,3 @@ public class Largest {
         }
     }
 }
-
-\\ or simply you can do this
-
-int largest = Math.max(z,Math.max(x,y));
