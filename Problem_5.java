@@ -1,7 +1,7 @@
 //Count how many times 7 occurs in a given integer
 
 import java.util.Scanner;
-public class Iteration {
+public class Problem_5 {
     public static void main(String[] args){
         try (Scanner sc = new Scanner(System.in)) {
             int num = sc.nextInt();
