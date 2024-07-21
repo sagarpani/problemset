@@ -1,7 +1,7 @@
 //The largest among 3 no.s 
 
 import java.util.Scanner;
-public class Largest {
+public class Problem_2 {
     public static void main(String[] args){
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter 3 no.s :");
