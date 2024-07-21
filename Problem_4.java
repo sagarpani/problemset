@@ -1,6 +1,8 @@
+//Print nth fibonacci no.
+
 import java.util.Scanner;
 
-public class Fibonacci{
+public class Problem_4{
      public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
         System.out.print("The no. of digits you want to print : ");
