@@ -2,7 +2,7 @@
 //The program will exit if you type 'x' or 'X'.
 
 import java.util.Scanner;
-public class Problem_7 {
+public class Problem_007 {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             while(true) {
