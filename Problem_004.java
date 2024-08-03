@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Problem_4{
+public class Problem_004{
      public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
         System.out.print("The no. of digits you want to print : ");
