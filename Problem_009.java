@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Problem_9 {
+public class Problem_009 {
 public class Don{
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
