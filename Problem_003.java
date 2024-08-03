@@ -1,7 +1,7 @@
 //Input a character and print whether that character is Uppercase or Lowercase letter
 
 import java.util.Scanner;
-public class Problem_3 {
+public class Problem_003 {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
 
