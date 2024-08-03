@@ -1,7 +1,7 @@
 //No. is prime or not
 
 import java.util.Scanner;
-public class Problem_8 {
+public class Problem_008 {
      public static void main(String[] args){
          try (Scanner sc = new Scanner(System.in)) {
              System.out.print("Enter a no. : ");
