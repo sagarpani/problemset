@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class Problem_10 {
+public class Problem_010 {
     public static void main(String[] args) {
       int[] arr = {2,3,4,5,6};
       swap(arr,1,2);
