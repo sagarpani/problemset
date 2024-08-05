@@ -1,5 +1,6 @@
-import java.util.Arrays;
+//Reverse an array
 
+import java.util.Arrays;
 public class Problem_012 {
      public static void main(String[] args) {
         int[] arr = {2,3,4,5,6};
