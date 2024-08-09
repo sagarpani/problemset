@@ -29,3 +29,13 @@ public class Problem_017 {
         return min;
     }
 }
+//There is also another logic for minimum no. in array where we can assume the value of first index as the minimum value
+//and compare it with the next values. Something like the code below.
+
+//int min = arr[0];
+//for(int i=1; i<arr.length; i++){
+//  if(arr[i]<min) min = arr[i];
+//}
+//return min;
+
+//Same pattern goes for maximum also
