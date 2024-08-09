@@ -32,8 +32,11 @@ public class Problem_019 {
        }
        return count;
     }
-    
+
     //Instead of writing all these codes I simply can use a method to count the digit of a number
+    //We have to convert any negative no. to positive no.
+    //if(digit<0) digit *= -1;
+    //as the below method works only on +ve no.s
     //return (int)Math.log10(digit) +1 ;
 
     static int counter(int digit){
