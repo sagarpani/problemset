@@ -38,6 +38,8 @@ public class Problem_019 {
     //if(digit<0) digit *= -1;
     //as the below method works only on +ve no.s
     //return (int)Math.log10(digit) +1 ;
+    //This method will be very faster compared to the below one as it is avoiding loops unlike the below one
+    //As there is no such iteration here so time and space complexity will be very much lesser
 
     static int counter(int digit){
         if(digit<0) digit *= -1;
