@@ -16,12 +16,12 @@ public class Problem_024 {
 
         //edge cases
         if(n == 0) return lim;
-        if(num < arr[0]) return arr[0];
+        if(num <= arr[0]) return arr[0];
         if(num > arr[n-1]) return lim;
 
         int start = 1;
         int end = n-1;
-        
+
         while(start < end){
             int mid = start + (end - start)/2;
             if(arr[mid] == num) return arr[mid];
