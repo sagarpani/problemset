@@ -37,8 +37,10 @@ public class Problem_027 {
     }
     static int[] searchRange(int[] nums, int target){
         int[] ans = {-1,-1};
+        if(nums.length ==0) return new int[]{-1,-1};
         ans[0] = findIndex(nums,target,true);
-        ans[1] = findIndex(nums,target,false);
+        if(ans[0] > -1) {
+            ans[1] = findIndex(nums,target,false);}
         return ans;
     }
     static int findIndex(int[] nums , int target, boolean findFirstIndex){
