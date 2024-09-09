@@ -1,5 +1,5 @@
 //Find position of an element in a sorted array of infinite numbers
-//Suppose you have a sorted array of infinite numbers, how would you search an element in the array?
+//Suppose you have a sorted array of infinite numbers, how would you search an element in the array? 
 //Source: Amazon Interview Experience
 //Since array is sorted, the first thing that clicks into mind is Binary Search,
 //but the problem here is we don't know the size of the array.
