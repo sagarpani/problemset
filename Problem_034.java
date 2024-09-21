@@ -29,39 +29,46 @@
 public class Problem_034 {
     public static void main(String[] args){
         int[] nums = {7,2,5,10,8};
-        int k = 3;
+        int k = 2;
         int ans = splitArray(nums,k);
         System.out.println(ans);
 
     }
-    static int splitArray(int[] nums,int k) {
-        int start = 0;
-        int end = 0;
-        for (int num : nums) {
-            start = Math.max(start, num);// This is a method which simply going to give the maximum value from the array by using simple linear search nothing else.
-            end += num;
+    static int splitArray(int[] nums, int k){
+        int start = Integer.MIN_VALUE;
+        int sum = 0;
+        for(int ele : nums){
+            start = Math.max(start, ele);// This is a method which simply going to give the maximum value from the array by using simple linear search nothing else.
+            sum += ele;
         }
+        int end = sum;
+        int mid;
         //binary search
-        while (start < end) {
-            int mid = start + (end - start) / 2;//This value will be considered as the maximum value in which the elements can sum upto
+        while(start <= end){
+            mid = start + (end - start)/2;//This value will be considered as the maximum value in which the elements can sum upto
             //Calculate in how many pieces you can divide this array
-            int piece = 1;//Here the initial value of piece is considered to be 1 as at least you can divide the entire array into 1 piece/sub array
-            int sum = 0;
-            for (int num : nums) {
-                if (sum + num > mid) {
-                    //then you can't add the new num into this sub array
-                    //you have to create a new sub array and add this num to that, then sum = num
-                    sum = num;//Here is so as one sub array has already been added and the num to the new array as well.
-                    //So now we have to create a new sum for the new sub array, and we assign the starting value to sum which is num.
-                    piece++;
-                }
-                else sum += num;
-            }
-            if (piece <= k) end = mid;
+            int partitions = partitionCounter(nums, mid);
+            if(partitions <= k) end = mid-1;
             else start = mid + 1;
-
-
         }
-        return start;//here start = end;
+        return start;
+
+    }
+    static int partitionCounter(int[] nums, int mid){
+        int partition = 1;//Here the initial value of piece is considered to be 1 as at least you can divide the entire array into 1 piece/sub array
+        int sum = 0;
+        for(int ele : nums){
+            if(sum + ele <= mid){
+                sum += ele;
+            }
+            else{
+                //then you can't add the new num into this sub array
+                //you have to create a new sub array and add this num to that, then sum = num
+                sum = ele;//Here is so as one sub array has already been added and the num to the new array as well.
+                //So now we have to create a new sum for the new sub array, and we assign the starting value to sum which is num.
+                partition++;
+            }
+        }
+        return partition;
     }
 }
