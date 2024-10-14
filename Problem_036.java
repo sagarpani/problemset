@@ -2,6 +2,8 @@
 //Given a matrix arr as  { {10,20,30,40},{15,25,35,45},{28,29,37,49},{33,34,42,50} } which is a 4X4 matrix and a target 28.
 //Find out in which index does this target reside.
 
+//Given that the matrix is sorted both row wise and column wise
+
 import java.util.Arrays;
 public class Problem_036 {
      public static void main(String[] args){
