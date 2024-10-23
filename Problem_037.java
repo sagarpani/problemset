@@ -1,5 +1,5 @@
-//Binary Search In 4x4 sorted matrix
-//Given a 2D sorted array arr = {{ 1, 2, 3, 4},{ 5, 6, 7, 8},{ 9,10,11,12},{13,14,15,16}} and target 19. Find in which index the target value resides with a time complexity O(log(nxn)).
+//Binary Search In nxm Sorted Matrix
+//Given a nxm sorted matrix arr = {{ 1, 2, 3, 4},{ 5, 6, 7, 8},{ 9,10,11,12},{13,14,15,16}} and target 19. Find in which index the target value resides with a time complexity O(log(nxm)).
 
 import java.util.Arrays;
 public class Problem_037{
