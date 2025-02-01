@@ -1,7 +1,5 @@
 //string is palindrome
 
-import java.util.Arrays;
-
 public class Problem_057 {
     public static void main(String[] args) {
         String str = "avgva";
@@ -9,7 +7,7 @@ public class Problem_057 {
     }
 
     //String Builder Method
-    static boolean palindromeStringBuilder(String str){
+    /*static boolean palindromeStringBuilder(String str){
         if(str.isEmpty()) return true;
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
@@ -50,7 +48,7 @@ public class Problem_057 {
             }
         }
         return true;
-    }
+    } */
 
     //2 pointer method while loop (1 comparision less)
     static boolean palindromeWhileLoop(String str) {
