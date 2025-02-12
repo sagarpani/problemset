@@ -1,4 +1,4 @@
-
+//Printing nth fibonacci using recursion
 public class Problem_059 {
     public static void main(String[] args) {
         System.out.println(fibonacci(5));
@@ -7,7 +7,7 @@ public class Problem_059 {
 
     //Printing nth fibonacci number by using loop with constant space
     static int fibonacci(int n){
-        if(n<=1) return n;
+        if(n<2) return n;
         int start = 0;
         int end = 1;
         for(int i = 2; i<= n; i++){
@@ -19,7 +19,7 @@ public class Problem_059 {
     }
 
     //Printing nth fibonacci number by using Recursion with variable space
-    static int fibonacciByRecursion(int n){
+    static long fibonacciByRecursion(int n){
         //Base Condition
         if(n<2) return n;
         return fibonacciByRecursion(n-1)+fibonacciByRecursion(n-2);
